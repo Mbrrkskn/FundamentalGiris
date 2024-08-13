@@ -1,4 +1,6 @@
-﻿namespace Donguler
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Donguler
 {
     internal class Program
     {
@@ -151,58 +153,58 @@
             //en sonunda oyuna devam etmek istiyor musunuz sorusunu alın. ve ona gore tekrarlatın
 
 
-            string devametmekıstıyormu;
-            do
-            {
+            //string devametmekıstıyormu;
+            //do
+            //{
 
-                Random rnd = new Random();
-                int tutulansayi = rnd.Next(1, 50);
-                byte tahminHakki = 5;
-                int kullaniciTahmini;
-                bool bilmedurumu = false;
+            //    Random rnd = new Random();
+            //    int tutulansayi = rnd.Next(1, 50);
+            //    byte tahminHakki = 5;
+            //    int kullaniciTahmini;
+            //    bool bilmedurumu = false;
 
 
-                Console.WriteLine("1 ile 50 arasında bir sayı giriniz");
+            //    Console.WriteLine("1 ile 50 arasında bir sayı giriniz");
 
-                while (tahminHakki > 0)
-                {
-                    Console.WriteLine();
-                    Console.Write("Tahmininizi giriniz: ");
-                    kullaniciTahmini = int.Parse(Console.ReadLine());
+            //    while (tahminHakki > 0)
+            //    {
+            //        Console.WriteLine();
+            //        Console.Write("Tahmininizi giriniz: ");
+            //        kullaniciTahmini = int.Parse(Console.ReadLine());
 
-                    if (kullaniciTahmini > tutulansayi)
-                    {
-                        Console.WriteLine("Daha küçük bir sayı giriniz.");
-                    }
-                    else if (kullaniciTahmini < tutulansayi)
-                    {
-                        Console.WriteLine("Daha büyük bir sayı giriniz.");
-                    }
-                    else
-                    {
-                        Console.WriteLine("Tebrikler sayıyı " + (6 - tahminHakki) + ". tahmininizde bildiniz");
-                        bilmedurumu = true;
-                        break;
-                    }
+            //        if (kullaniciTahmini > tutulansayi)
+            //        {
+            //            Console.WriteLine("Daha küçük bir sayı giriniz.");
+            //        }
+            //        else if (kullaniciTahmini < tutulansayi)
+            //        {
+            //            Console.WriteLine("Daha büyük bir sayı giriniz.");
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine("Tebrikler sayıyı " + (6 - tahminHakki) + ". tahmininizde bildiniz");
+            //            bilmedurumu = true;
+            //            break;
+            //        }
 
-                    tahminHakki--;
+            //        tahminHakki--;
 
-                    if (tahminHakki > 0 && !bilmedurumu)
-                    {
-                        Console.WriteLine("Kalan tahmin hakkınız: " + tahminHakki);
-                    }
-                    else if (tahminHakki == 0 && !bilmedurumu)
-                    {
-                        Console.WriteLine("Tahmin hakkınız kalmadı. Tutulan sayı: " + tutulansayi);
-                    }
-                }
-                Console.Write("Oyuna devam etmek istiyor musunuz? (Evet için 'e', Hayır için 'h' yazınız): ");
-                devametmekıstıyormu = Console.ReadLine().ToLower();
+            //        if (tahminHakki > 0 && !bilmedurumu)
+            //        {
+            //            Console.WriteLine("Kalan tahmin hakkınız: " + tahminHakki);
+            //        }
+            //        else if (tahminHakki == 0 && !bilmedurumu)
+            //        {
+            //            Console.WriteLine("Tahmin hakkınız kalmadı. Tutulan sayı: " + tutulansayi);
+            //        }
+            //    }
+            //    Console.Write("Oyuna devam etmek istiyor musunuz? (Evet için 'e', Hayır için 'h' yazınız): ");
+            //    devametmekıstıyormu = Console.ReadLine().ToLower();
 
-            }
-            while (devametmekıstıyormu == "e");
+            //}
+            //while (devametmekıstıyormu == "e");
 
-            Console.WriteLine("Oyun bitti. Tekrar görüşmek üzere!");
+            //Console.WriteLine("Oyun bitti. Tekrar görüşmek üzere!");
 
 
 
@@ -211,22 +213,61 @@
             //1,1,2,3,5,8,13,21,34.... kendinden onceki iki sayının toplami şeklindedir.
             // ilk 20 fibanocci sayisini ekrana bastirin.
 
-            int n = 20; 
-            int a = 0, b = 1; 
-            int sayi = 0; 
+            //int n = 20; 
+            //int a = 0, b = 1; 
+            //int sayi = 0; 
 
-            Console.WriteLine("İlk 20 Fibonacci sayısı:");
+            //Console.WriteLine("İlk 20 Fibonacci sayısı:");
 
-            while (sayi < n)
+            //while (sayi < n)
+            //{
+            //    Console.Write(a + " "); 
+            //    int next = a + b;
+            //    a = b; 
+            //    b = next; 
+            //    sayi++; 
+            //}
+
+            //Console.WriteLine();
+
+            //ikinci durum for ile
+            //int sayi1 = 0, sayi2 = 1, toplam;
+
+            //for (int i = 1; i < 21; i++)
+            //{
+            //    toplam = sayi1 + sayi2;
+            //    Console.WriteLine(toplam + " ");
+            //    sayi1 = sayi2;
+            //    sayi2 = toplam;
+
+            //}
+
+            //Console.ReadLine();
+
+
+            #region İlk 20 asal sayı
+            int sayac = 1, altSayac = 0;
+
+            for (int i = 3; i < 1000; i++)
             {
-                Console.Write(a + " "); 
-                int next = a + b;
-                a = b; 
-                b = next; 
-                sayi++; 
+                for (int j = 1; j <=i; j++)
+                {
+                    if (i % j == 0)
+                    {
+                        altSayac++;
+                    }
+                }
+                if (altSayac == 2)
+                {
+                    Console.WriteLine(i);
+                    sayac++;
+                }
+                altSayac = 0;
+                if (sayac == 20) break;
+
             }
 
-            Console.WriteLine(); 
+            #endregion
 
             #endregion
             #endregion
