@@ -147,53 +147,95 @@
             #region Sayı Tahmin oyunu :  1-50 arası sayı tutulacak.Kullanıcıya 5 tahmin hakkı verilecek
             //eger tutulandan daha buyuk sayı girilirse daha kucuk bir sayı giriniz mesajı
             //eger tutulandan daha kucuk sayı girilirse daha buyuk bir sayı giriniz mesajı
-           //oyunu bildiyse eger kacıncı yada tahminde bildiğini yazdırın
-           //en sonunda oyuna devam etmek istiyor musunuz sorusunu alın. ve ona gore tekrarlatın
-            Random rnd = new Random();
-            int tutulansayi = rnd.Next(1,50);
-            byte tahminHakki = 5;
-            int kullaniciTahmini;
-            bool bilmedurumu = false;
+            //oyunu bildiyse eger kacıncı yada tahminde bildiğini yazdırın
+            //en sonunda oyuna devam etmek istiyor musunuz sorusunu alın. ve ona gore tekrarlatın
 
-            Console.WriteLine("1 ile 50 arasında bir sayı giriniz");
 
-            while (tahminHakki > 0)
+            string devametmekıstıyormu;
+            do
             {
-                Console.WriteLine();
-                Console.Write("Tahmininizi giriniz: ");
-                kullaniciTahmini = int.Parse(Console.ReadLine());
 
-                if (kullaniciTahmini > tutulansayi)
-                {
-                    Console.WriteLine("Daha küçük bir sayı giriniz.");
-                }
-                else if (kullaniciTahmini < tutulansayi)
-                {
-                    Console.WriteLine("Daha büyük bir sayı giriniz.");
-                }
-                else
-                {
-                    Console.WriteLine("Tebrikler sayıyı " + (6- tahminHakki) +". tahmininizde bildiniz");
-                    bilmedurumu = true;
-                    break;
-                }
+                Random rnd = new Random();
+                int tutulansayi = rnd.Next(1, 50);
+                byte tahminHakki = 5;
+                int kullaniciTahmini;
+                bool bilmedurumu = false;
 
-                tahminHakki--;
 
-                if (tahminHakki > 0 && !bilmedurumu)
+                Console.WriteLine("1 ile 50 arasında bir sayı giriniz");
+
+                while (tahminHakki > 0)
                 {
-                    Console.WriteLine("Kalan tahmin hakkınız: " + tahminHakki);
+                    Console.WriteLine();
+                    Console.Write("Tahmininizi giriniz: ");
+                    kullaniciTahmini = int.Parse(Console.ReadLine());
+
+                    if (kullaniciTahmini > tutulansayi)
+                    {
+                        Console.WriteLine("Daha küçük bir sayı giriniz.");
+                    }
+                    else if (kullaniciTahmini < tutulansayi)
+                    {
+                        Console.WriteLine("Daha büyük bir sayı giriniz.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("Tebrikler sayıyı " + (6 - tahminHakki) + ". tahmininizde bildiniz");
+                        bilmedurumu = true;
+                        break;
+                    }
+
+                    tahminHakki--;
+
+                    if (tahminHakki > 0 && !bilmedurumu)
+                    {
+                        Console.WriteLine("Kalan tahmin hakkınız: " + tahminHakki);
+                    }
+                    else if (tahminHakki == 0 && !bilmedurumu)
+                    {
+                        Console.WriteLine("Tahmin hakkınız kalmadı. Tutulan sayı: " + tutulansayi);
+                    }
                 }
-                else if(tahminHakki == 0 )
-                {
-                    Console.WriteLine("Tahmin hakkınız kalmadı. Tutulan sayı: " + tutulansayi);
-                }
+                Console.Write("Oyuna devam etmek istiyor musunuz? (Evet için 'e', Hayır için 'h' yazınız): ");
+                devametmekıstıyormu = Console.ReadLine().ToLower();
+
+            }
+            while (devametmekıstıyormu == "e");
+
+            Console.WriteLine("Oyun bitti. Tekrar görüşmek üzere!");
+
+
+
+
+            #region Fibonacci 
+            //1,1,2,3,5,8,13,21,34.... kendinden onceki iki sayının toplami şeklindedir.
+            // ilk 20 fibanocci sayisini ekrana bastirin.
+
+            int n = 20; 
+            int a = 0, b = 1; 
+            int sayi = 0; 
+
+            Console.WriteLine("İlk 20 Fibonacci sayısı:");
+
+            while (sayi < n)
+            {
+                Console.Write(a + " "); 
+                int next = a + b;
+                a = b; 
+                b = next; 
+                sayi++; 
             }
 
+            Console.WriteLine(); 
+
+            #endregion
             #endregion
             #endregion
 
             #endregion
         }
+
     }
 }
+
+
