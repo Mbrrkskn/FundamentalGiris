@@ -67,8 +67,8 @@
             #endregion
 
             #region 20 kişilik bir sınıfın notlarını rastgele atama yapalım
-            int[] notlar = new int[20];
-            Random rnd = new Random();
+            //int[] notlar = new int[20];
+            //Random rnd = new Random();
 
             //Foreach ile donerken deger ataması yapılamaz
             //sık yapılan hatalardandır
@@ -90,7 +90,7 @@
 
             #region string'e farklı bakıs
 
-            string str = "Beşiktaş";
+            //string str = "Beşiktaş";
             //for (int i = 0; i<str.Length; i++)
             //{
             //    Console.WriteLine(str[i]);
@@ -124,40 +124,140 @@
 
             #region 20 kişilik bir sınıfın 2 vize 1 final notunu tuyacak dizyi tanımlayınız
 
-            int[,] notlar2 = new int[20, 3];
+            //int[,] notlar2 = new int[20, 3];
 
-            for (int i = 0; i < notlar2.GetLength(0); i++)
+            //for (int i = 0; i < notlar2.GetLength(0); i++)
+            //{
+            //    for (int j = 0; j < notlar2.GetLength(1); j++)
+            //    {
+            //        notlar2[i, j] = rnd.Next(20, 101);
+            //    }
+
+            //}
+            //for (int i = 0; i < notlar2.GetLength(0); i++)
+            //{
+            //    int vize1 = notlar2[i, 0];
+            //    int vize2 = notlar2[i, 1];
+            //    int final = notlar2[i, 2];
+
+            //    double ortalama = (vize1 * 0.3) + (vize2 * 0.3) + (final * 0.4);
+
+            //    if (ortalama >= 50)
+            //    {
+            //        Console.WriteLine($"Öğrenci {i + 1}: Ortalama: {ortalama:F2} - Geçti");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine($"Öğrenci {i + 1}: Ortalama: {ortalama:F2} - Kaldı");
+            //    }
+
+            //Bu dizideki öğrencilerin geçme kalma durumunu ekrana basınız
+            //vizelerin toplamının %30 finalinin %70'i alınacak
+            //50 ve üzeri geçti olacak
+            #endregion
+
+            #endregion
+
+            #region Dizideki en kucuk ve en buyuk elemanı bulma
+
+            //int[] sayilar = new int[20];
+
+            //Random rnd = new Random(); 
+
+            //for (int i = 0; i < sayilar.Length; i++)
+            //{
+            //    sayilar[i] = rnd.Next(1, 100);
+            //}
+
+            //int enKucuk = sayilar[0];
+            //int enBuyuk = sayilar[0];
+
+            //for (int i = 1; i < sayilar.Length; i++)
+            //{
+            //    if (sayilar[i] < enKucuk)
+            //    {
+            //        enKucuk = sayilar[i];
+            //    }
+
+            //   else if (sayilar[i] > enBuyuk)
+            //    {
+            //        enBuyuk = sayilar[i];
+            //    }
+            //}
+
+            //Console.WriteLine("Dizideki en küçük sayı: " + enKucuk);
+            //Console.WriteLine("Dizideki en büyük sayı: " + enBuyuk);
+
+            //ikinci yöntem
+            //int[] sayilar2 = new int[20];
+            //for (int i =0; i < sayilar2.Length; i++)
+            //{
+            //    sayilar2[i] = rnd.Next(0, 100);
+            //    Console.WriteLine(sayilar2[i]);
+            //}
+            //Console.WriteLine(sayilar2.Max());
+            //Console.WriteLine(sayilar2.Min());
+            #endregion
+
+
+            #region Olusturdugumuz int[] dizileri sıralayın
+            //küçükten büyüğe ,büyükten küçüğe olarak
+
+            int[] sayilar2 = new int[20];
+            Random rnd = new Random();
+
+            //  rastgele sayılar atıyorum
+            for (int i = 0; i < sayilar2.Length; i++)
             {
-                for (int j = 0; j < notlar2.GetLength(1); j++)
-                {
-                    notlar2[i, j] = rnd.Next(20, 101);
-                }
-
+                sayilar2[i] = rnd.Next(0, 100);
+                Console.WriteLine(sayilar2[i]); // diziyi ekrana yazdırıyoruz
             }
-            for (int i = 0; i < notlar2.GetLength(0); i++)
+
+            // küçükten büyüğe sıralama
+            for (int i = 0; i < sayilar2.Length - 1; i++)
             {
-                int vize1 = notlar2[i, 0];
-                int vize2 = notlar2[i, 1];
-                int final = notlar2[i, 2];
-
-                double ortalama = (vize1 * 0.3) + (vize2 * 0.3) + (final * 0.4);
-
-                if (ortalama >= 50)
+                for (int j = 0; j < sayilar2.Length - i - 1; j++)
                 {
-                    Console.WriteLine($"Öğrenci {i + 1}: Ortalama: {ortalama:F2} - Geçti");
+                    if (sayilar2[j] > sayilar2[j + 1])
+                    {
+                        // elemanları takas yapıyoruz
+                        int temp = sayilar2[j];
+                        sayilar2[j] = sayilar2[j + 1];
+                        sayilar2[j + 1] = temp;
+                    }
                 }
-                else
-                {
-                    Console.WriteLine($"Öğrenci {i + 1}: Ortalama: {ortalama:F2} - Kaldı");
-                }
-
-                //Bu dizideki öğrencilerin geçme kalma durumunu ekrana basınız
-                //vizelerin toplamının %30 finalinin %70'i alınacak
-                //50 ve üzeri geçti olacak
-                #endregion
-
-                #endregion
             }
+
+            Console.WriteLine("\nKüçükten büyüğe sıralanmış dizi:");
+            foreach (int sayi in sayilar2)
+            {
+                Console.WriteLine(sayi);
+            }
+
+            //  büyükten küçüğe sıralama
+            for (int i = 0; i < sayilar2.Length - 1; i++)
+            {
+                for (int j = 0; j < sayilar2.Length - i - 1; j++)
+                {
+                    if (sayilar2[j] < sayilar2[j + 1])
+                    {
+                        // elemanları takas yapıyoruz
+                        int temp = sayilar2[j];
+                        sayilar2[j] = sayilar2[j + 1];
+                        sayilar2[j + 1] = temp;
+                    }
+                }
+            }
+
+            Console.WriteLine("\nBüyükten küçüğe sıralanmış dizi:");
+            foreach (int sayi in sayilar2)
+            {
+                Console.WriteLine(sayi);
+            }
+
+
+            #endregion
         }
     }
 }
+
