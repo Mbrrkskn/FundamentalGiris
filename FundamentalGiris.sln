@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Donguler", "Donguler\Dongul
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diziler", "Diziler\Diziler.csproj", "{2D880BCD-425E-43D1-B329-AEDE1E0BB622}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleCıktısı", "ConsoleCıktısı\ConsoleCıktısı.csproj", "{22CCDC1B-6095-4DEA-929C-C8CA3CB0DE49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{2D880BCD-425E-43D1-B329-AEDE1E0BB622}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D880BCD-425E-43D1-B329-AEDE1E0BB622}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D880BCD-425E-43D1-B329-AEDE1E0BB622}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22CCDC1B-6095-4DEA-929C-C8CA3CB0DE49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22CCDC1B-6095-4DEA-929C-C8CA3CB0DE49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22CCDC1B-6095-4DEA-929C-C8CA3CB0DE49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22CCDC1B-6095-4DEA-929C-C8CA3CB0DE49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
