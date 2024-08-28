@@ -39,6 +39,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "17_Library_Kullanımı", "1
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "16-MyLibrary", "16-MyLibrary\16-MyLibrary.csproj", "{DED4D660-35E7-4789-8776-BE341E2953BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "19-NugetPaketKullanimi", "19-NugetPaketKullanimi\19-NugetPaketKullanimi.csproj", "{F3778BCE-5D2E-4221-96E8-B49ADFC772A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "21_DosyaTekrar", "21_DosyaTekrar\21_DosyaTekrar.csproj", "{C99E7E07-5786-4225-8F22-C39055DC3E9D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +121,14 @@ Global
 		{DED4D660-35E7-4789-8776-BE341E2953BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DED4D660-35E7-4789-8776-BE341E2953BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DED4D660-35E7-4789-8776-BE341E2953BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3778BCE-5D2E-4221-96E8-B49ADFC772A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3778BCE-5D2E-4221-96E8-B49ADFC772A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3778BCE-5D2E-4221-96E8-B49ADFC772A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3778BCE-5D2E-4221-96E8-B49ADFC772A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C99E7E07-5786-4225-8F22-C39055DC3E9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C99E7E07-5786-4225-8F22-C39055DC3E9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C99E7E07-5786-4225-8F22-C39055DC3E9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C99E7E07-5786-4225-8F22-C39055DC3E9D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
