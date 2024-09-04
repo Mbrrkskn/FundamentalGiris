@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="_3_Class.Personeller.Sekreter" Collapsed="true">
+    <Position X="4.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiAAAAAAAA=</HashCode>
+      <FileName>Personeller\Sekreter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_3_Class.Personeller.SatisElemani" Collapsed="true">
+    <Position X="6.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAgAAAAAAAAAAAAIgAAAAAAAA=</HashCode>
+      <FileName>Personeller\SatisElemani.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_3_Class.Personeller.Kisi" Collapsed="true">
+    <Position X="6.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAICAAAAACAAAAAAEAAAAAAAAAAAAAEACAAAACAAAAA=</HashCode>
+      <FileName>Personeller\Kisi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_3_Class.Personeller.Personel" Collapsed="true">
+    <Position X="6.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAACAEAA=</HashCode>
+      <FileName>Personeller\Personel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_3_Class.Personeller.İnsanKaynaklari" Collapsed="true">
+    <Position X="9" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAgAABAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Personeller\İnsanKaynaklari.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_3_Class.Personeller.SatisMüdürü" Collapsed="true">
+    <Position X="6.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAABAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Personeller\SatisMüdürü.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_3_Class.Personeller.ITTasarimci" Collapsed="true">
+    <Position X="1.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Personeller\ITTasarimci.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_3_Class.Personeller.ITYazilim" Collapsed="true">
+    <Position X="11.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAE=</HashCode>
+      <FileName>Personeller\ITYazilim.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="_3_Class.Personeller.ISatisElemani" Collapsed="true">
+    <Position X="14.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAgAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Personeller\ISatisElemani.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

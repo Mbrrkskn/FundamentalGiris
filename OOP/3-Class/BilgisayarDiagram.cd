@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="_3_Class.Bilgisayarlar.BaseItem" Collapsed="true">
+    <Position X="9" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAQAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Bilgisayarlar\BaseItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_3_Class.Bilgisayarlar.Bilgisayar">
+    <Position X="15" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAABgAAAAAAAABAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Bilgisayarlar\Bilgisayar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_3_Class.Bilgisayarlar.EkranKarti">
+    <Position X="5.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bilgisayarlar\EkranKarti.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_3_Class.Bilgisayarlar.OyuncuBilgisayari">
+    <Position X="16.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAAAAAAAAAAAABABAAAAEAAAAA=</HashCode>
+      <FileName>Bilgisayarlar\OyuncuBilgisayari.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_3_Class.Bilgisayarlar.Ram" Collapsed="true">
+    <Position X="12.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bilgisayarlar\Ram.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_3_Class.Bilgisayarlar.HardDisk" Collapsed="true">
+    <Position X="8" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bilgisayarlar\SSD.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_3_Class.Bilgisayarlar.AnaKart" Collapsed="true">
+    <Position X="10" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bilgisayarlar\AnaKart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_3_Class.Bilgisayarlar.Cpu">
+    <Position X="9" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bilgisayarlar\Cpu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="_3_Class.Bilgisayarlar.EkranKartiTipi" Collapsed="true">
+    <Position X="16.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Bilgisayarlar\EkranKarti.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="_3_Class.Bilgisayarlar.RamTipi" Collapsed="true">
+    <Position X="15" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAsAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bilgisayarlar\RamTipi.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="_3_Class.Bilgisayarlar.DiskTipi" Collapsed="true">
+    <Position X="15" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Bilgisayarlar\SSD.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
