@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="_10_PolimorfizmWindow.CepTelefonlari.BasePhone" Collapsed="true">
+    <Position X="3.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAEAAAAAA=</HashCode>
+      <FileName>CepTelefonlari\BasePhone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_10_PolimorfizmWindow.CepTelefonlari.Iphone" Collapsed="true">
+    <Position X="3.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>CepTelefonlari\Iphone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_10_PolimorfizmWindow.CepTelefonlari.Nokia" Collapsed="true">
+    <Position X="1" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>CepTelefonlari\Nokia.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_10_PolimorfizmWindow.CepTelefonlari.Samsung" Collapsed="true">
+    <Position X="5.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>CepTelefonlari\Samsung.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="_11_Interface.Personeller.InsanKaynaklari" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAABAAAAAAAAAAAAgAAAAAAQ=</HashCode>
+      <FileName>Personeller\InsanKaynaklari.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="_11_Interface.Personeller.ITTasarimci" Collapsed="true">
+    <Position X="9.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIQAIAQAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Personeller\ITTasarimci.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="_11_Interface.Personeller.ITYazilim" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAQAAAIAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAE=</HashCode>
+      <FileName>Personeller\ITYazilim.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="_11_Interface.Personeller.Kisi" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAICAAAAACAAAAAAEAAAAAAAAAAAAAEACAQAACAAAAA=</HashCode>
+      <FileName>Personeller\Kisi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_11_Interface.Personeller.Mudur" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAgAAAAAACAAAAAAA=</HashCode>
+      <FileName>Personeller\Mudur.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_11_Interface.Personeller.Personel" Collapsed="true">
+    <Position X="6" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAACAEAA=</HashCode>
+      <FileName>Personeller\Personel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="_11_Interface.Personeller.SatisElemani" Collapsed="true">
+    <Position X="11.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAgAAAAAAAAAAAAIgAAAAAAAA=</HashCode>
+      <FileName>Personeller\SatisElemani.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="_11_Interface.Personeller.SatisMuduru" Collapsed="true">
+    <Position X="11.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAAAAAAAABAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Personeller\SatisMuduru.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="_11_Interface.Personeller.Sekreter" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAgAAAAAAAg=</HashCode>
+      <FileName>Personeller\Sekreter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="_11_Interface.IBilisimPersoneli">
+    <Position X="14.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAQAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IBilisimPersoneli.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="_11_Interface.IPersonel">
+    <Position X="16" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>IPersonel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="_11_Interface.ISatis" Collapsed="true">
+    <Position X="17.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAgAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>ISatis.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="_11_Interface.ISatisMudur">
+    <Position X="16" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>ISatisMudur.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="_11_Interface.ISekreter" Collapsed="true">
+    <Position X="17.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAgAAAAAAAg=</HashCode>
+      <FileName>ISekreter.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="_11_Interface.ITasarimci">
+    <Position X="14.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ITasarimci.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="_11_Interface.IYazilimci">
+    <Position X="16" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAE=</HashCode>
+      <FileName>IYazilimci.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="_11_Interface.Personeller.ISatisElemani">
+    <Position X="14.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAgAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Personeller\ISatisElemani.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

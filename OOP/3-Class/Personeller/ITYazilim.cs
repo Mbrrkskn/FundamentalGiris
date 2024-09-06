@@ -4,19 +4,29 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _3_Class.Personeller
+namespace _11_Interface.Personeller
 {
-    public class ITYazilim: Personel
+
+    public class ITYazilim : Personel
     {
-        public ITYazilim()
+        public ITYazilim(string ad, string soyad) : base(ad, soyad)
         {
-            Maas=base.Maas*2.5;
         }
+
+      
         public void KodYaz()
+        {
+            
+        }
+
+        public void DebugYap()
         {
 
         }
-        public void DebugYap() { }
-        public void TestEt() { }
+
+        public void TestEt()
+        {
+            
+        }
     }
 }

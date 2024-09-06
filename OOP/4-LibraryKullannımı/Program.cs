@@ -1,5 +1,10 @@
-﻿using _3_Class.Bilgisayarlar;
-using _3_Class.Personeller;
+﻿using _1_Giris;
+using _11_Interface.Personeller;
+using _2_ClassOrnekler.Emlak;
+using _3_Class.Bilgisayarlar;
+
+
+
 
 namespace _4_LibraryKullannımı
 {
@@ -12,6 +17,7 @@ namespace _4_LibraryKullannımı
             
             AnaKart anaKart = new ();
 
+            //Abstract class'lardan instance alinamaz.
             //BaseItem baseItem = new BaseItem();
             //baseItem.Marka = "xyz";
             //baseItem.Model = "abc";
@@ -34,17 +40,37 @@ namespace _4_LibraryKullannımı
 
             Console.WriteLine("Oyuncu bilgisayari Fiyati :" + oyuncu.FiyatHesapla());
             Console.WriteLine("bilgisayar Fiyati :" + bilgisayar.FiyatHesapla());
-            SatisMüdürü satisMuduru = new SatisMüdürü();
-            SatisElemani satisElemani = new SatisElemani();
-            // Console.WriteLine(satisElemani.Prim);
+           // Kisi = new Kisi("ayse", "kaya");
+
+            SatisMuduru satisMuduru = new SatisMuduru("Ali", "Yilmaz");
+            //SatisElemani satisElemani = new SatisElemani();
+            //Console.WriteLine(satisElemani);
+
+            //Kisi kisi = new Kisi();
+
+            //Console.WriteLine(satisElemani.Prim);
             // satisMuduru.Prim = 100;
-            satisMuduru.BagliElemanlar.Add(satisElemani);  //SatisMüdürü'ne bağlı satış elemanları ekliyorum
-            Console.WriteLine($"Satış Müdürü'nün Maaşı: {satisMuduru.Maas}");  //Satış Müdürü'nün maaşını ve primini hesaplıyoruz
 
+            //Emlak Bilgilerini Yazdırma
+            EmlakTipi emlakTipi = new EmlakTipi(
+           ilanNo: 1,
+           ilanTarihi: new DateTime(2024, 9, 4),
+           kimden: "Sahibinden",
+           tapuDurumu: "Kat Mülkiyeti",
+           adres: "Fatih Mah. No:24",
+           fiyat: 400000,
+           satilik: true,
+           metreKare: 125,
+           konut: "Daire",
+           arsa: "",
+           isYeri: "",
+           konutProjeleri: "Lüks Konut Projesi"
+           );
 
+            Console.WriteLine($"EmlakTipi: İlan No: {emlakTipi.İlanNo}, Fiyat: {emlakTipi.Fiyat} TL, Konut: {emlakTipi.Konut}, Proje: {emlakTipi.KonutProjeleri}");
+        
 
-
-            Console.WriteLine("Hello, World!");
+        Console.WriteLine("Hello, World!");
         }
     }
 }

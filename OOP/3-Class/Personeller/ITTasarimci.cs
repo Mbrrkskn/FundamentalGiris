@@ -4,15 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _3_Class.Personeller
+namespace _11_Interface.Personeller
 {
-     public class ITTasarimci :Personel
+    public class ITTasarimci : Personel
     {
-        public ITTasarimci()
+        public ITTasarimci(string ad, string soyad) : base(ad, soyad)
         {
-            Maas=base.Maas*2;
+            Maas = base.Maas * 2;
         }
-        public void LogoTasarla() { }
-        public void WebSitesiTasarla() { }
+
+       
+        public void LogoTasarla()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void WebSitesiTasarla()
+        {
+            throw new NotImplementedException();
+        }
     }
-}
+    }

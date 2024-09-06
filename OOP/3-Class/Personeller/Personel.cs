@@ -4,14 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _3_Class.Personeller
+namespace _11_Interface.Personeller
 {
-    public class Personel :Kisi
+    public class Personel : Kisi
     {
-        public double Maas { get; set; } = 170002;
+        public double Maas { get; set; } = 17002;
         public string Departman { get; set; }
 
-        public void IseGecKalma() { }
+        public Personel(string ad, string soyad) : base(ad, soyad)
+        {
 
+        }
+
+        public void IseGecKalma()
+        {
+           
+        }
     }
 }

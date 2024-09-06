@@ -9,6 +9,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\1-Giris\1-Giris.csproj" />
+    <ProjectReference Include="..\2_ClassOrnekler\2_ClassOrnekler.csproj" />
     <ProjectReference Include="..\3-Class\3-Class.csproj" />
   </ItemGroup>
 
