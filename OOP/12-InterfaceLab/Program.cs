@@ -71,7 +71,7 @@ namespace _12_InterfaceLab
                 Ad = "Müberra",
                 Soyad = "Keskin",
                 Yas = 23,
-                Gsm = "5316625633",
+                Gsm = "5551211212",
                 Eposta = "keskinmuberra111@gmail.com",
                 MezunOlduguOkul = "Medipol Üniversitesi",
                 AskerikDurumu =false,
