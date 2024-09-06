@@ -1,7 +1,7 @@
 ﻿using _1_Giris;
-using _11_Interface.Personeller;
 using _2_ClassOrnekler.Emlak;
 using _3_Class.Bilgisayarlar;
+using _3_ClassLib.Personeller;
 
 
 
@@ -42,7 +42,7 @@ namespace _4_LibraryKullannımı
             Console.WriteLine("bilgisayar Fiyati :" + bilgisayar.FiyatHesapla());
            // Kisi = new Kisi("ayse", "kaya");
 
-            SatisMuduru satisMuduru = new SatisMuduru("Ali", "Yilmaz");
+            //SatisMuduru satisMuduru = new SatisMuduru("Ali", "Yilmaz");
             //SatisElemani satisElemani = new SatisElemani();
             //Console.WriteLine(satisElemani);
 

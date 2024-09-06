@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _11_Interface.Personeller
+namespace _3_ClassLib.Personeller
 {
     public class InsanKaynaklari : Personel
     {
