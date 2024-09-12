@@ -22,14 +22,18 @@
         {
             Polis polis = new Polis("Ali Demir");
 
-            Sofor sofor1 = new Sofor("Müberra", "Keskin", "34 MBR 55", "Otomobil");
-            Sofor sofor2 = new Sofor("Müberra", "Keskin", "34 MBR 55", "Ticari");
+            Sofor sofor1 = new Sofor("Müberra", "Keskin", "34 MBR 55", AracTipi.Otomobil);
+            Sofor sofor2 = new Sofor("Ayse", "Yıldız", "34 AYS 34",  AracTipi.Ticari);
+            Sofor sofor3 = new Sofor("Veli", "Yilmaz", "34 VL 34",  AracTipi.Kamyon);
 
             sofor1.HizAsimi += polis.CezaKes;
             sofor2.HizAsimi += polis.CezaKes;
+            sofor3.HizAsimi += polis.CezaKes;
+
 
             sofor1.GazaBas(130);
             sofor2.GazaBas(100);
+            sofor3.GazaBas(81);
 
 
         }

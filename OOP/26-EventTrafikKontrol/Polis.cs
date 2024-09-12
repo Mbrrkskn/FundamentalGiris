@@ -13,9 +13,10 @@ namespace _26_EventTrafikKontrol
         {
             AdSoyad = adSoyad;
         }
-        public void CezaKes(object sender, HizAsimiEventArgs e)
+        public void CezaKes(object sender, HizAsimiEventArgs h)
         {
-            Console.WriteLine($"{e.Plaka} plakalı aracın sürücüsüne {e.Hiz} km hızla gittiği için {e.Ceza} TL ceza kesilmiştir.");
+            var sofor = sender as Sofor;
+            Console.WriteLine($"{h.Plaka} plakalı {sofor.AracTipi}  aracın sürücüsüne {h.Hiz} km hızla gittiği için {h.Ceza} TL ceza kesilmiştir.");
             Console.WriteLine($"Cezayı kesen polis: {AdSoyad}");
         }
     }
