@@ -10,10 +10,10 @@ namespace _12_InterfaceLab.InsanKaynaklari
     {
         public void BasvuruDegerlendir(Aday aday)
         {
-            // Basvuruyu değerlendirmek için bir yöntem
+           
             Console.WriteLine($"İnsan Kaynakları {aday.Ad} {aday.Soyad} başvurusunu inceliyor...");
 
-            // Örnek bir değerlendirme (yetenek testi sonucuna göre)
+          
             if (aday.YetenekTestiSonucu)
             {
                 Console.WriteLine("Başvuru olumlu sonuçlandı.");

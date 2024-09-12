@@ -99,25 +99,20 @@ namespace _12_InterfaceLab
                 BildigiDiller = "Türkçe, İngilizce",
                 YazilimDilleri = "Kotlin,Python"
             };
-            // Aday başvurusunu yapıyor
-            aday.BasvuruYap();
-            aday2.BasvuruYap();
 
-            // Aday yetenek testine giriyor
-            aday.YetenekTestiDegerlendirme(true);  // Test başarılı
-            aday2.YetenekTestiDegerlendirme(false); //Test basarısız
-
-            // İnsan Kaynakları başvuruyu değerlendiriyor
-            InsanKaynaklari.InsanKaynaklari ik = new InsanKaynaklari.InsanKaynaklari();
-            ik.BasvuruDegerlendir(aday);
-            ik.BasvuruDegerlendir(aday2);
-
-           
-            // IT pozisyonu bilgisi
             ITPozisyon itPozisyon = new ITPozisyon("Yazılım Geliştirici", "C#, Java, Sql bilgisi");
             itPozisyon.PozisyonBilgisiGoster();
 
-            // Başvuru sonucunu göster
+            aday.BasvuruYap();
+            aday2.BasvuruYap();
+           
+            aday.YetenekTestiDegerlendirme(true);  // Test başarılı
+            aday2.YetenekTestiDegerlendirme(false); //Test basarısız
+
+            InsanKaynaklari.InsanKaynaklari ik = new InsanKaynaklari.InsanKaynaklari();
+            ik.BasvuruDegerlendir(aday);
+            ik.BasvuruDegerlendir(aday2);
+           
             aday.BasvuruSonucu();
             aday2.BasvuruSonucu();
 
